@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Page</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Student Profile Section -->
+        <div class="profile-section">
+            <div class="profile-pic">
+                <img src="C:\Users\Asamoah Clinton\Desktop\N\profile.jpg" alt="Profile Picture">
+            </div>
+            <h2 class="student-name">John Doe</h2>
+
+            <!-- Input Form -->
+            <div class="input-form">
+                <input type="text" placeholder="Enter your input here..." id="userInput">
+                <button class="submit-btn" onclick="submitInput()">Submit</button>
+            </div>
+        </div>
+
+        <!-- Right-Side Section -->
+        <div class="right-section">
+            <h3>Courses</h3>
+            <div class="dropdown">
+                <button class="dropbtn">Computer Science Programs</button>
+                <div class="dropdown-content">
+                    <a href="#">Data Structures</a>
+                    <a href="#">Algorithms</a>
+                    <a href="#">Operating Systems</a>
+                    <a href="#">Database Systems</a>
+                    <a href="#">Software Engineering</a>
+                    <a href="#">Computer Networks</a>
+                    <a href="#">Artificial Intelligence</a>
+                    <a href="#">Cyber Security</a>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">Web Development</a>
+                </div>
+            </div>
+
+            <!-- User Dashboard -->
+            <h3>User Dashboard</h3>
+            <div class="dashboard">
+                <p><strong>Accessed Courses:</strong></p>
+                <ul id="accessedCourses">
+                    <li>Data Structures</li>
+                    <li>Algorithms</li>
+                </ul>
+
+                <p><strong>Missed Courses:</strong></p>
+                <ul id="missedCourses">
+                    <li>Web Development</li>
+                    <li>Cyber Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="homePagescript.js"></script>
+</body>
+</html>
+
