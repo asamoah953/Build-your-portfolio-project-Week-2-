@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define the character encoding and viewport settings for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+
+    <!-- Link to the external CSS file for custom styles -->
     <link rel="stylesheet" href="userLogin.css">
+
+    <!-- Link to Font Awesome for icons, including the eye icon for password visibility -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form" action="homePage.html" method="POST">
+        <!-- Create the login form -->
+        <form class="login-form" action="homePage.html" method="POST" id="loginForm">
+            <!-- Heading for the login form -->
             <h1>Login</h1>
+
+            <!-- Email/Contact input field -->
             <div class="form-group">
                 <input type="text" id="email-contact" name="email-contact" placeholder="Email or Contact" required>
             </div>
+
+            <!-- Password input field with toggle visibility option -->
             <div class="form-group password-group">
                 <div class="password-container">
                     <input type="password" id="password" name="password" placeholder="Password" required>
+                    <!-- Font Awesome icon for toggling password visibility -->
                     <i class="fas fa-eye" id="togglePassword" onclick="togglePassword()"></i>
                 </div>
             </div>
+
+            <!-- Submit button for the login form -->
             <button type="submit" class="btn">Login</button>
         </form>
     </div>
 
+    <!-- Footer with navigation links -->
     <footer class="footer">
         <div class="footer-content">
             <ul>
+                <!-- List of navigation links -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -36,7 +52,7 @@
         </div>
     </footer>
 
+    <!-- Link to external JavaScript file to handle login logic -->
     <script src="userLoginscript.js"></script>
 </body>
 </html>
-
